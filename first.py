@@ -1,5 +1,5 @@
 from langchain.schema.messages import HumanMessage, SystemMessage
-from langchain_intro.chatbot import chat_model
+from langchain_intro.chatbot import llm
 
 messages = [
     SystemMessage(
@@ -8,4 +8,4 @@ messages = [
     ),
     HumanMessage(content="What is Medicaid managed care?"),
 ]
-chat_model.invoke(messages)
+llm.invoke(messages)
